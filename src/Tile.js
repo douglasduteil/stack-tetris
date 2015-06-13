@@ -8,4 +8,4 @@ var Tile = React.createClass({
   }
 });
 
-export Tile;
+export default Tile;

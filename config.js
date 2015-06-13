@@ -18,6 +18,7 @@ System.config({
   "map": {
     "babel": "npm:babel-core@5.5.6",
     "babel-runtime": "npm:babel-runtime@5.5.6",
+    "bacon": "npm:bacon@0.0.1",
     "core-js": "npm:core-js@0.9.16",
     "ramda": "npm:ramda@0.14.0",
     "react": "npm:react@0.14.0-alpha3",
@@ -47,6 +48,9 @@ System.config({
     },
     "npm:babel-runtime@5.5.6": {
       "process": "github:jspm/nodelibs-process@0.1.1"
+    },
+    "npm:bacon@0.0.1": {
+      "buffer": "github:jspm/nodelibs-buffer@0.1.0"
     },
     "npm:buffer@3.2.2": {
       "base64-js": "npm:base64-js@0.0.8",
