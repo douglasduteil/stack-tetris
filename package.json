@@ -4,9 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "postinstall": "jspm i",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "npm run serve",
-    "serve": "browser-sync start --server --no-open --files='*.html', src/**/*"
+    "serve": "browser-sync start --config bs-config.js"
   },
   "author": "",
   "license": "ISC",
@@ -14,6 +15,7 @@
     "directories": {},
     "dependencies": {
       "bacon": "npm:bacon@^0.0.1",
+      "css": "npm:jspm-loader-css-modules@^0.1.2",
       "ramda": "npm:ramda@^0.14.0",
       "react": "npm:react@^0.14.0-alpha3"
     },

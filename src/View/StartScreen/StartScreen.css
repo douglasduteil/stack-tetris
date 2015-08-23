@@ -1,0 +1,48 @@
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 390px;
+}
+
+.title {
+  font-family: "VT323", sans-serif;
+  font-size: 4rem;
+}
+
+.menu {
+  font-family: "VT323", sans-serif;
+  list-style: none;
+  padding: 0;
+  margin: 3rem;
+}
+
+.menuItem + .menuItem {
+  margin-top: 1rem;
+}
+
+.menuButton {
+  /* TODO(douglasduteil): [REFACTO] .button class*/
+  touch-action: manipulation;
+  background-image: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font: inherit;
+  color: inherit;
+  margin: 0;
+
+  /**/
+  background-color: transparent;
+  font-size: 2rem;
+  border: 1px dotted;
+  padding: .2em 1em;
+}
+
+.menuButton:hover {
+  border-style: dashed;
+  background-color: hsla(0, 100%, 100%, 0.07);
+}
