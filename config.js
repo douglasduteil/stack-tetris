@@ -22,8 +22,10 @@ System.config({
     "babel": "npm:babel-core@5.8.23",
     "babel-runtime": "npm:babel-runtime@5.8.20",
     "bacon": "npm:bacon@0.0.1",
-    "css": "npm:jspm-loader-css-modules@0.1.2",
     "core-js": "npm:core-js@1.1.3",
+    "css": "systemjs_plugins/css",
+    "jspm-loader-css": "npm:jspm-loader-css@0.1.6",
+    "postcss-css-variables": "npm:postcss-css-variables@0.4.0",
     "ramda": "npm:ramda@0.14.0",
     "react": "npm:react@0.14.0-beta3",
     "react-dom": "npm:react-dom@0.14.0-beta3",
@@ -154,6 +156,11 @@ System.config({
       "fs": "github:jspm/nodelibs-fs@0.1.2",
       "process": "github:jspm/nodelibs-process@0.1.1",
       "util": "github:jspm/nodelibs-util@0.1.0"
+    },
+    "npm:postcss-css-variables@0.4.0": {
+      "escape-string-regexp": "npm:escape-string-regexp@1.0.3",
+      "extend": "npm:extend@2.0.1",
+      "postcss": "npm:postcss@4.1.16"
     },
     "npm:postcss-modules-extract-imports@0.0.5": {
       "postcss": "npm:postcss@4.1.16",
