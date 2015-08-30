@@ -1,4 +1,10 @@
+//
+
 import React from 'react';
+import ReactDOM from 'react-dom';
+
+//
 import StackTetris from './View/StackTetris';
 
-React.render(<StackTetris/>, document.querySelector('stack-tetris'));
+//
+ReactDOM.render(<StackTetris/>, document.querySelector('stack-tetris'));

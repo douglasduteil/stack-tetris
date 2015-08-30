@@ -1,4 +1,9 @@
+//
+
 import React from 'react';
+import ReactDOM from 'react-dom';
+
+// Local style
 import style from './StartScreen.css!';
 
 //
@@ -10,7 +15,7 @@ export default class StartScreen extends React.Component {
     const event = document.createEvent('Event');
     event.initEvent(GOTO_EVENT.toString(), true, true);
     event.viewName = viewName;
-    React.findDOMNode(this).dispatchEvent(event);
+    ReactDOM.findDOMNode(this).dispatchEvent(event);
   }
 
   render() {

@@ -1,12 +1,18 @@
-import React from 'react';
-import style from './StackTetris.css!';
+//
 
+import React from 'react';
+import ReactDOM from 'react-dom';
+
+// Component Dependences
 import TabBar from '~/Component/TabBar';
 import Gutter from '~/Component/Gutter';
 
 // Views
 import StartScreen from '../StartScreen';
 import InGame from '../InGame';
+
+// Local style
+import style from './StackTetris.css!';
 
 // TODO(douglasduteil): [REAFCTO] extract string constants
 export const VIEW_NAME = {
@@ -34,12 +40,12 @@ export default class StackTetris extends React.Component {
   }
 
   componentDidMount() {
-    React.findDOMNode(this)
+    ReactDOM.findDOMNode(this)
       .addEventListener(GOTO_EVENT.toString(), this.__setViewName);
   }
 
   componentWillUnmount() {
-    React.findDOMNode(this)
+    ReactDOM.findDOMNode(this)
       .removeEventListener(GOTO_EVENT.toString(), this.__setViewName);
   }
 

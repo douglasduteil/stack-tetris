@@ -1,12 +1,14 @@
+//
+
 import React from 'react';
 
-//
+// Component Dependences
 import Grid from '~/Component/Grid';
 
-//
+// Models Dependences
 import GridModel from '~/Model/GridModel';
 
-//
+// Local style
 import style from './InGame.css!';
 
 //
