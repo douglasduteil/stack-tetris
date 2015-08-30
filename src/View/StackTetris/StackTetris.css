@@ -16,7 +16,7 @@
 .header {
   display: flex;
   background: #ffffff;
-  height: 33px;
+  height: var(--gWindowGeaderHeight);
   padding: 0 18px;
 }
 
@@ -30,12 +30,13 @@
 }
 
 .headerItem {
+  --itemSize: calc(var(--gWindowGeaderHeight) / 3);
   background: #b8bbc2;
   border-radius: 50%;
-  width: 12px;
-  height: 12px;
+  width: var(--itemSize);
+  height: var(--itemSize);
   margin-right: 6px;
-  margin-top: 11px;
+  margin-top: var(--itemSize);
 }
 
 .editor {

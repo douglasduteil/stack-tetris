@@ -3,14 +3,16 @@
 //
 
 import { CSSLoader, Plugins } from 'jspm-loader-css'
+import calc from 'postcss-calc';
 import cssvariables from 'postcss-css-variables';
 
 const {fetch} = new CSSLoader([
   cssvariables({
     variables: {
-
+      gWindowGeaderHeight: '33px'
     }
   }),
+  calc(),
   Plugins.localByDefault,
   Plugins.extractImports,
   Plugins.scope,

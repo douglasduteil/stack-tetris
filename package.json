@@ -16,6 +16,7 @@
     "dependencies": {
       "bacon": "npm:bacon@^0.0.1",
       "jspm-loader-css": "npm:jspm-loader-css@^0.1.6",
+      "postcss-calc": "npm:postcss-calc@^4",
       "postcss-css-variables": "npm:postcss-css-variables@^0.4.0",
       "ramda": "npm:ramda@^0.14.0",
       "react": "npm:react@^0.14.0-beta3",

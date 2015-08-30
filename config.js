@@ -25,6 +25,7 @@ System.config({
     "core-js": "npm:core-js@1.1.3",
     "css": "systemjs_plugins/css",
     "jspm-loader-css": "npm:jspm-loader-css@0.1.6",
+    "postcss-calc": "npm:postcss-calc@4.1.0",
     "postcss-css-variables": "npm:postcss-css-variables@0.4.0",
     "ramda": "npm:ramda@0.14.0",
     "react": "npm:react@0.14.0-beta3",
@@ -134,9 +135,6 @@ System.config({
     "npm:js-base64@2.1.9": {
       "buffer": "github:jspm/nodelibs-buffer@0.1.0"
     },
-    "npm:jspm-loader-css-modules@0.1.2": {
-      "jspm-loader-css": "npm:jspm-loader-css@0.1.6"
-    },
     "npm:jspm-loader-css@0.1.6": {
       "css-modules-loader-core": "npm:css-modules-loader-core@0.0.10",
       "path": "npm:path@0.11.14"
@@ -156,6 +154,11 @@ System.config({
       "fs": "github:jspm/nodelibs-fs@0.1.2",
       "process": "github:jspm/nodelibs-process@0.1.1",
       "util": "github:jspm/nodelibs-util@0.1.0"
+    },
+    "npm:postcss-calc@4.1.0": {
+      "postcss": "npm:postcss@4.1.16",
+      "postcss-message-helpers": "npm:postcss-message-helpers@2.0.0",
+      "reduce-css-calc": "npm:reduce-css-calc@1.2.0"
     },
     "npm:postcss-css-variables@0.4.0": {
       "escape-string-regexp": "npm:escape-string-regexp@1.0.3",
@@ -195,11 +198,6 @@ System.config({
       "fbjs": "npm:fbjs@0.1.0-alpha.4",
       "react": "npm:react@0.14.0-beta3"
     },
-    "npm:react@0.14.0-alpha3": {
-      "buffer": "github:jspm/nodelibs-buffer@0.1.0",
-      "envify": "npm:envify@3.4.0",
-      "process": "github:jspm/nodelibs-process@0.1.1"
-    },
     "npm:react@0.14.0-beta3": {
       "buffer": "github:jspm/nodelibs-buffer@0.1.0",
       "envify": "npm:envify@3.4.0",
@@ -218,6 +216,13 @@ System.config({
       "string_decoder": "npm:string_decoder@0.10.31",
       "util": "github:jspm/nodelibs-util@0.1.0"
     },
+    "npm:reduce-css-calc@1.2.0": {
+      "balanced-match": "npm:balanced-match@0.1.0",
+      "reduce-function-call": "npm:reduce-function-call@1.0.1"
+    },
+    "npm:reduce-function-call@1.0.1": {
+      "balanced-match": "npm:balanced-match@0.1.0"
+    },
     "npm:source-map@0.1.31": {
       "amdefine": "npm:amdefine@1.0.0",
       "fs": "github:jspm/nodelibs-fs@0.1.2",
@@ -235,10 +240,6 @@ System.config({
     },
     "npm:string_decoder@0.10.31": {
       "buffer": "github:jspm/nodelibs-buffer@0.1.0"
-    },
-    "npm:through@2.3.7": {
-      "process": "github:jspm/nodelibs-process@0.1.1",
-      "stream": "github:jspm/nodelibs-stream@0.1.0"
     },
     "npm:through@2.3.8": {
       "process": "github:jspm/nodelibs-process@0.1.1",
