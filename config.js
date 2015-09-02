@@ -9,11 +9,12 @@ System.config({
     "blacklist": []
   },
   "paths": {
-    "*": "*.js",
     "~/*": "./src/*.js",
     "github:*": "jspm_packages/github/*.js",
-    "npm:*": "jspm_packages/npm/*.js"
-  }
+    "npm:*": "jspm_packages/npm/*.js",
+    "*": "*.js"
+  },
+  "defaultJSExtensions": true
 });
 
 System.config({
